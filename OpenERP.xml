@@ -24,7 +24,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="openerp_tags" value="&lt;openerp&gt;&#10;    &lt;data&gt;&#10;    &lt;/data&gt;&#10;&lt;/openerp&gt;" description="Create OpenERP tags" toReformat="false" toShortenFQNames="true">
+  <template name="openerp_tags" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&#10;&lt;openerp&gt;&#10;    &lt;data&gt;&#10;    &lt;/data&gt;&#10;&lt;/openerp&gt;" description="Create OpenERP tags" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -72,6 +72,76 @@
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="action_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="__terp__" value="# -*- coding: utf-8 -*-&#10;{&#10;  &quot;name&quot;: &quot;$module_name$&quot;,&#10;  &quot;description&quot;: &quot;&quot;&quot;Aquest mòdul afegeix les següents funcionalitats:&#10;  * $module_description$&#10;&quot;&quot;&quot;,&#10;  &quot;version&quot;: &quot;0-dev&quot;,&#10;  &quot;author&quot;: &quot;GISCE&quot;,&#10;  &quot;category&quot;: &quot;Master&quot;,&#10;  &quot;depends&quot;: [$module_deps$],&#10;  &quot;init_xml&quot;: [],&#10;  &quot;demo_xml&quot;: [],&#10;  &quot;update_xml&quot;: [$module_xml$],&#10;  &quot;active&quot;: False,&#10;  &quot;installable&quot;: True&#10;}&#10;" toReformat="false" toShortenFQNames="true">
+    <variable name="module_xml" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module_deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module_description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="security" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;openerp&gt;&#10;    &lt;data&gt;&#10;        &lt;!-- Definim els grups --&gt;&#10;        &lt;record model=&quot;res.groups&quot; id=&quot;group_$module$_r&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$module$ / ReadOnly&lt;/field&gt;&#10;        &lt;/record&gt;&#10;        &lt;record model=&quot;res.groups&quot; id=&quot;group_$module$_w&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$module$ / User&lt;/field&gt;&#10;        &lt;/record&gt;&#10;        &lt;record model=&quot;res.groups&quot; id=&quot;group_$module$_u&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$module$ / Manager&lt;/field&gt;&#10;        &lt;/record&gt;&#10;     &lt;/data&gt;&#10;&lt;/openerp&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="shortcut" value="&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;action_sc_$description$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;src_model&quot;&gt;$src_model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;    &lt;field name=&quot;domain&quot;&gt;$domain$&lt;/field&gt;&#10;&lt;/record&gt;&#10;&lt;record id=&quot;value_action_sc_$description$&quot; model=&quot;ir.values&quot;&gt;&#10;    &lt;field name=&quot;object&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;key2&quot;&gt;client_action_relate&lt;/field&gt;&#10;    &lt;field name=&quot;key&quot;&gt;action&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$src_model$&lt;/field&gt;&#10;    &lt;field name=&quot;value&quot; eval=&quot;'ir.actions.act_window,'+str(ref('action_sc_$description$'))&quot; /&gt;&#10;&lt;/record&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="domain" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="src_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
