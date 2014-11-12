@@ -184,17 +184,20 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ff" value="def $function_name(self, cursor, uid, ids, field_name, arg, context=None):&#10;    if not context:&#10;        context = {}&#10;    res = dict.fromkeys(ids, False)&#10;    &#10;    return res" description="OpenERP field function" toReformat="false" toShortenFQNames="true">
+  <template name="ff" value="def _$function_name$(self, cursor, uid, ids, field_name, arg, context=None):&#10;    if not context:&#10;        context = {}&#10;    res = dict.fromkeys(ids, False)&#10;    &#10;    return res" description="OpenERP field function" toReformat="false" toShortenFQNames="true">
+    <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="ff_search" value="def $function_name(self, cursor, uid, obj, name, args, context=None):&#10;    if not context:&#10;        context = {}&#10;    if not args:&#10;        return [('id', '=', 0)]" description="OpenERP field function search" toReformat="false" toShortenFQNames="true">
+  <template name="ff_search" value="def _$function_name$_search(self, cursor, uid, obj, name, args, context=None):&#10;    if not context:&#10;        context = {}&#10;    if not args:&#10;        return [('id', '=', 0)]" description="OpenERP field function search" toReformat="false" toShortenFQNames="true">
+    <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="ff_inv" value="def $function_name(self, cursor, uid, ids, name, value, args, context=None):&#10;    if not context:&#10;        context = {}&#10;    &#10;    return True" description="OpenERP field function inverse" toReformat="false" toShortenFQNames="true">
+  <template name="ff_inv" value="def _$function_name$_inv(self, cursor, uid, ids, name, value, args, context=None):&#10;    if not context:&#10;        context = {}&#10;    &#10;    return True" description="OpenERP field function inverse" toReformat="false" toShortenFQNames="true">
+    <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
