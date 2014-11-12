@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="OpenERP">
-  <template name="ir_ui_view" value=" &lt;record model=&quot;ir.ui.view&quot; id=&quot;view_$view_id$_$type$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$view_id$.$type$&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;$type$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;$type$ string=&quot;$view_title$&quot;&gt;&#10;            &lt;notebook&gt;&#10;                &lt;page string=&quot;General&quot;&gt;&#10;                    &lt;field name=&quot;name&quot; select=&quot;1&quot;/&gt;&#10;                &lt;/page&gt;&#10;            &lt;/notebook&gt;&#10;        &lt;/$type$&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" shortcut="ENTER" description="Create a ir.ui.view" toReformat="false" toShortenFQNames="true">
+  <template name="ir_ui_view" value="&lt;record model=&quot;ir.ui.view&quot; id=&quot;view_$view_id$_$type$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$view_id$.$type$&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;$type$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;$type$ string=&quot;$view_title$&quot;&gt;&#10;            &lt;notebook&gt;&#10;                &lt;page string=&quot;General&quot;&gt;&#10;                    &lt;field name=&quot;name&quot; select=&quot;1&quot;/&gt;&#10;                &lt;/page&gt;&#10;            &lt;/notebook&gt;&#10;        &lt;/$type$&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" shortcut="ENTER" description="Create a ir.ui.view" toReformat="false" toShortenFQNames="true">
     <variable name="view_id" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
@@ -12,15 +12,15 @@
       <option name="XML" value="true" />
       <option name="Python" value="false" />
       <option name="Django" value="false" />
+      <option name="SQL" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -32,19 +32,19 @@
       <option name="XML" value="true" />
       <option name="Python" value="false" />
       <option name="Django" value="false" />
+      <option name="SQL" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="menuitem" value=" &lt;menuitem name=&quot;$menu_name$&quot; action=&quot;action_$menu_action$&quot; id=&quot;menu_$menu_action$&quot; parent=&quot;$menu_parent$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="menuitem" value="&lt;menuitem name=&quot;$menu_name$&quot; action=&quot;action_$menu_action$&quot; id=&quot;menu_$menu_action$&quot; parent=&quot;$menu_parent$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
     <variable name="menu_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="menu_action" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="menu_parent" expression="" defaultValue="" alwaysStopAt="true" />
@@ -55,15 +55,15 @@
       <option name="XML" value="true" />
       <option name="Python" value="false" />
       <option name="Django" value="false" />
+      <option name="SQL" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -79,15 +79,15 @@
       <option name="XML" value="true" />
       <option name="Python" value="false" />
       <option name="Django" value="false" />
+      <option name="SQL" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -103,15 +103,15 @@
       <option name="XML" value="false" />
       <option name="Python" value="true" />
       <option name="Django" value="false" />
+      <option name="SQL" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -124,15 +124,15 @@
       <option name="XML" value="true" />
       <option name="Python" value="false" />
       <option name="Django" value="false" />
+      <option name="SQL" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -149,17 +149,49 @@
       <option name="XML" value="true" />
       <option name="Python" value="false" />
       <option name="Django" value="false" />
+      <option name="SQL" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
+  </template>
+  <template name="osv_class" value="class $ClassName$(osv.osv):&#10;    _name = '$osv_name$'&#10;    &#10;    _columns = {&#10;        '$colum1$':&#10;    }&#10;    &#10;    _defaults = {&#10;    }&#10;&#10;$ClassName$()" toReformat="false" toShortenFQNames="true">
+    <variable name="colum1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="osv_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ff" value="def $function_name(self, cursor, uid, ids, field_name, arg, context=None):&#10;    if not context:&#10;        context = {}&#10;    res = dict.fromkeys(ids, False)&#10;    &#10;    return res" description="OpenERP field function" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="ff_search" value="def $function_name(self, cursor, uid, obj, name, args, context=None):&#10;    if not context:&#10;        context = {}&#10;    if not args:&#10;        return [('id', '=', 0)]" description="OpenERP field function search" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="ff_inv" value="def $function_name(self, cursor, uid, ids, name, value, args, context=None):&#10;    if not context:&#10;        context = {}&#10;    &#10;    return True" description="OpenERP field function inverse" toReformat="false" toShortenFQNames="true">
+    <context />
   </template>
 </templateSet>
 
