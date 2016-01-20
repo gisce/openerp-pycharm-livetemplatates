@@ -3,7 +3,7 @@
 ### Install
 
 ```sh
-cp OpenERP.xml ~/.PyCharm30/config/templates/
+cp OpenERP.xml ~/.PyCharmXX/config/templates/
 ```
 
 ### Use
