@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="OpenERP">
   <template name="ir_ui_view" value="&lt;record model=&quot;ir.ui.view&quot; id=&quot;view_$view_id$_$type$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$view_id$.$type$&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;$type$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;$type$ string=&quot;$view_title$&quot;&gt;&#10;            &lt;notebook&gt;&#10;                &lt;page string=&quot;General&quot;&gt;&#10;                    &lt;field name=&quot;name&quot; select=&quot;1&quot;/&gt;&#10;                &lt;/page&gt;&#10;            &lt;/notebook&gt;&#10;        &lt;/$type$&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" shortcut="ENTER" description="Create a ir.ui.view" toReformat="false" toShortenFQNames="true">
     <variable name="view_id" expression="" defaultValue="" alwaysStopAt="true" />
@@ -11,16 +10,6 @@
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="Python" value="false" />
-      <option name="Django" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -31,16 +20,6 @@
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="Python" value="false" />
-      <option name="Django" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -54,16 +33,6 @@
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="Python" value="false" />
-      <option name="Django" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -78,16 +47,6 @@
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="Python" value="false" />
-      <option name="Django" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -102,16 +61,6 @@
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="Django" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -123,16 +72,6 @@
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="Python" value="false" />
-      <option name="Django" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -148,16 +87,6 @@
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="Python" value="false" />
-      <option name="Django" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -171,16 +100,6 @@
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="Django" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
