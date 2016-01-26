@@ -202,5 +202,22 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="name_get" value="def name_get(self, cursor, uid, ids, context=None):&#10;    if not context:&#10;        context = {}&#10;    if not ids:&#10;        return []&#10;    res = []&#10;    for record in self.browse(cursor, uid, ids, context=context):&#10;        res += [(record.id, record.name)]&#10;    return res&#10;    " toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="name_search" value="def name_search(self, cursor, uid, name, args=None, operator='ilike',&#10;                context=None, limit=80):&#10;    if args is None:&#10;        args = []&#10;    if not context:&#10;        context = {}&#10;    search_params = [] + args&#10;    if name:&#10;        search_params += [&#10;            ('name', operator, name)&#10;        ]&#10;    ids = self.search(cursor, uid, search_params, limit=limit,&#10;                      context=context)&#10;    return self.name_get(cursor, uid, ids, context=context)&#10;    " toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="return_window" value="return {&#10;    'domain': [('id','in', $ids$)],&#10;    'name': _('$tab_title$'),&#10;    'view_type': 'form',&#10;    'view_mode': 'tree,form',&#10;    'res_model': '$model$',&#10;    'type': 'ir.actions.act_window'&#10;}" description="Return a new window" toReformat="false" toShortenFQNames="true">
+    <variable name="ids" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="tab_title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
-
