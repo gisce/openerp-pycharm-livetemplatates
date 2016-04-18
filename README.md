@@ -8,6 +8,6 @@ cp OpenERP.xml ~/.PyCharmXX/config/templates/
 
 ### Use
 
-Insise your OpenERP files: XML views, Python files
+Inside your OpenERP files: XML views, Python files
 
 Press **Ctrl + J** to insert the template
