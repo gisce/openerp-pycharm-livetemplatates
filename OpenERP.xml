@@ -139,4 +139,20 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="return_report" value="return {&#10;    'type': 'ir.actions.report.xml',&#10;    'report_name': '$report_name_without_report_preffix$',&#10;    'datas': $datas$&#10;}" description="Return a Report" toReformat="false" toShortenFQNames="true">
+    <variable name="report_name_without_report_preffix" expression="" defaultValue="{}" alwaysStopAt="true" />
+    <variable name="datas" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="wizard" value="&lt;record id=&quot;action_wizard_$description$&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$wizard_model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;context&quot;&gt;{'model': '$model$'}&lt;/field&gt;&#10;    &lt;field name=&quot;target&quot;&gt;new&lt;/field&gt;&#10;&lt;/record&gt;&#10;&lt;record id=&quot;value_wizard_$description$&quot; model=&quot;ir.values&quot;&gt;&#10;    &lt;field name=&quot;object&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;key2&quot;&gt;client_action_multi&lt;/field&gt;&#10;    &lt;field name=&quot;key&quot;&gt;action&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;value&quot; eval=&quot;'ir.actions.act_window,'+str(ref('action_wizard_$description$'))&quot;/&gt;&#10;&lt;/record&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="wizard_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
