@@ -155,4 +155,12 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
+  <template name="data" value="&lt;record model=&quot;$model$&quot; id=&quot;$id_value$&quot;&gt;&#10;     &lt;field name=&quot;name&quot;&gt;$name$&lt;/field&gt;&#10;&lt;/record&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="id_value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
