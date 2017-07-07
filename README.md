@@ -35,3 +35,4 @@ Press **Ctrl + J** to insert the template
 - Creating a security group (`security`)
 - Creating a shortcut from one object to another (`shortcut`)
 - Defining a wizard (`wizard`)
+- Add a field tag (`field`)
