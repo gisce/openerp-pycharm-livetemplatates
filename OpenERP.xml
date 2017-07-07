@@ -5,102 +5,62 @@
     <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="view_title" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="openerp_tags" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&#10;&lt;openerp&gt;&#10;    &lt;data&gt;&#10;    &lt;/data&gt;&#10;&lt;/openerp&gt;" description="Create OpenERP tags" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="menuitem" value="&lt;menuitem name=&quot;$menu_name$&quot; action=&quot;action_$menu_action$&quot; id=&quot;menu_$menu_action$&quot; parent=&quot;$menu_parent$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="menuitem" value="&lt;menuitem name=&quot;$menu_name$&quot; action=&quot;action_$menu_action$&quot; id=&quot;menu_$menu_action$&quot; parent=&quot;$menu_parent$&quot;/&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="menu_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="menu_action" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="menu_parent" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ir_action" value="&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;action_$action_id$_$type$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$action_name$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;view_$action_id$_$type$&quot;/&gt;&#10;&lt;/record&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="ir_action" value="&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;action_$action_id$_$type$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$action_name$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;view_$action_id$_$type$&quot;/&gt;&#10;&lt;/record&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="action_id" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="action_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="__terp__" value="# -*- coding: utf-8 -*-&#10;{&#10;  &quot;name&quot;: &quot;$module_name$&quot;,&#10;  &quot;description&quot;: &quot;&quot;&quot;Aquest mòdul afegeix les següents funcionalitats:&#10;  * $module_description$&#10;&quot;&quot;&quot;,&#10;  &quot;version&quot;: &quot;0-dev&quot;,&#10;  &quot;author&quot;: &quot;GISCE&quot;,&#10;  &quot;category&quot;: &quot;Master&quot;,&#10;  &quot;depends&quot;: [$module_deps$],&#10;  &quot;init_xml&quot;: [],&#10;  &quot;demo_xml&quot;: [],&#10;  &quot;update_xml&quot;: [$module_xml$],&#10;  &quot;active&quot;: False,&#10;  &quot;installable&quot;: True&#10;}&#10;" toReformat="false" toShortenFQNames="true">
+  <template name="__terp__" value="# -*- coding: utf-8 -*-&#10;{&#10;  &quot;name&quot;: &quot;$module_name$&quot;,&#10;  &quot;description&quot;: &quot;&quot;&quot;Aquest mòdul afegeix les següents funcionalitats:&#10;  * $module_description$&#10;&quot;&quot;&quot;,&#10;  &quot;version&quot;: &quot;0-dev&quot;,&#10;  &quot;author&quot;: &quot;GISCE&quot;,&#10;  &quot;category&quot;: &quot;Master&quot;,&#10;  &quot;depends&quot;: [$module_deps$],&#10;  &quot;init_xml&quot;: [],&#10;  &quot;demo_xml&quot;: [],&#10;  &quot;update_xml&quot;: [$module_xml$],&#10;  &quot;active&quot;: False,&#10;  &quot;installable&quot;: True&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="module_xml" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="module_deps" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="module_description" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="security" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;openerp&gt;&#10;    &lt;data&gt;&#10;        &lt;!-- Definim els grups --&gt;&#10;        &lt;record model=&quot;res.groups&quot; id=&quot;group_$module$_r&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$module$ / ReadOnly&lt;/field&gt;&#10;        &lt;/record&gt;&#10;        &lt;record model=&quot;res.groups&quot; id=&quot;group_$module$_w&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$module$ / User&lt;/field&gt;&#10;        &lt;/record&gt;&#10;        &lt;record model=&quot;res.groups&quot; id=&quot;group_$module$_u&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$module$ / Manager&lt;/field&gt;&#10;        &lt;/record&gt;&#10;     &lt;/data&gt;&#10;&lt;/openerp&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="security" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;openerp&gt;&#10;    &lt;data&gt;&#10;        &lt;!-- Definim els grups --&gt;&#10;        &lt;record model=&quot;res.groups&quot; id=&quot;group_$module$_r&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$module$ / ReadOnly&lt;/field&gt;&#10;        &lt;/record&gt;&#10;        &lt;record model=&quot;res.groups&quot; id=&quot;group_$module$_w&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$module$ / User&lt;/field&gt;&#10;        &lt;/record&gt;&#10;        &lt;record model=&quot;res.groups&quot; id=&quot;group_$module$_u&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$module$ / Manager&lt;/field&gt;&#10;        &lt;/record&gt;&#10;     &lt;/data&gt;&#10;&lt;/openerp&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="shortcut" value="&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;action_sc_$description$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;src_model&quot;&gt;$src_model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;    &lt;field name=&quot;domain&quot;&gt;$domain$&lt;/field&gt;&#10;&lt;/record&gt;&#10;&lt;record id=&quot;value_action_sc_$description$&quot; model=&quot;ir.values&quot;&gt;&#10;    &lt;field name=&quot;object&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;key2&quot;&gt;client_action_relate&lt;/field&gt;&#10;    &lt;field name=&quot;key&quot;&gt;action&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$src_model$&lt;/field&gt;&#10;    &lt;field name=&quot;value&quot; eval=&quot;'ir.actions.act_window,'+str(ref('action_sc_$description$'))&quot; /&gt;&#10;&lt;/record&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="shortcut" value="&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;action_sc_$description$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;src_model&quot;&gt;$src_model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;    &lt;field name=&quot;domain&quot;&gt;$domain$&lt;/field&gt;&#10;&lt;/record&gt;&#10;&lt;record id=&quot;value_action_sc_$description$&quot; model=&quot;ir.values&quot;&gt;&#10;    &lt;field name=&quot;object&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;key2&quot;&gt;client_action_relate&lt;/field&gt;&#10;    &lt;field name=&quot;key&quot;&gt;action&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$src_model$&lt;/field&gt;&#10;    &lt;field name=&quot;value&quot; eval=&quot;'ir.actions.act_window,'+str(ref('action_sc_$description$'))&quot; /&gt;&#10;&lt;/record&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="domain" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="src_model" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="Python" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="osv_class" value="class $ClassName$(osv.osv):&#10;    _name = '$osv_name$'&#10;    &#10;    _columns = {&#10;        '$colum1$':&#10;    }&#10;    &#10;    _defaults = {&#10;    }&#10;&#10;$ClassName$()" toReformat="false" toShortenFQNames="true">
+  <template name="osv_class" value="class $ClassName$(osv.osv):&#10;    _name = '$osv_name$'&#10;    &#10;    _columns = {&#10;        '$colum1$':&#10;    }&#10;    &#10;    _defaults = {&#10;    }&#10;&#10;$ClassName$()" description="" toReformat="false" toShortenFQNames="true">
     <variable name="colum1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="osv_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
       <option name="Python" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="ff" value="def _$function_name$(self, cursor, uid, ids, field_name, arg, context=None):&#10;    if not context:&#10;        context = {}&#10;    res = dict.fromkeys(ids, False)&#10;    &#10;    return res" description="OpenERP field function" toReformat="false" toShortenFQNames="true">
@@ -121,12 +81,12 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="name_get" value="def name_get(self, cursor, uid, ids, context=None):&#10;    if not context:&#10;        context = {}&#10;    if not ids:&#10;        return []&#10;    res = []&#10;    for record in self.browse(cursor, uid, ids, context=context):&#10;        res += [(record.id, record.name)]&#10;    return res&#10;    " toReformat="false" toShortenFQNames="true">
+  <template name="name_get" value="def name_get(self, cursor, uid, ids, context=None):&#10;    if not context:&#10;        context = {}&#10;    if not ids:&#10;        return []&#10;    res = []&#10;    for record in self.browse(cursor, uid, ids, context=context):&#10;        res += [(record.id, record.name)]&#10;    return res&#10;    " description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="name_search" value="def name_search(self, cursor, uid, name, args=None, operator='ilike',&#10;                context=None, limit=80):&#10;    if args is None:&#10;        args = []&#10;    if not context:&#10;        context = {}&#10;    search_params = [] + args&#10;    if name:&#10;        search_params += [&#10;            ('name', operator, name)&#10;        ]&#10;    ids = self.search(cursor, uid, search_params, limit=limit,&#10;                      context=context)&#10;    return self.name_get(cursor, uid, ids, context=context)&#10;    " toReformat="false" toShortenFQNames="true">
+  <template name="name_search" value="def name_search(self, cursor, uid, name, args=None, operator='ilike',&#10;                context=None, limit=80):&#10;    if args is None:&#10;        args = []&#10;    if not context:&#10;        context = {}&#10;    search_params = [] + args&#10;    if name:&#10;        search_params += [&#10;            ('name', operator, name)&#10;        ]&#10;    ids = self.search(cursor, uid, search_params, limit=limit,&#10;                      context=context)&#10;    return self.name_get(cursor, uid, ids, context=context)&#10;    " description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -146,7 +106,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="wizard" value="&lt;record id=&quot;action_wizard_$description$&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$wizard_model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;context&quot;&gt;{'model': '$model$'}&lt;/field&gt;&#10;    &lt;field name=&quot;target&quot;&gt;new&lt;/field&gt;&#10;&lt;/record&gt;&#10;&lt;record id=&quot;value_wizard_$description$&quot; model=&quot;ir.values&quot;&gt;&#10;    &lt;field name=&quot;object&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;key2&quot;&gt;client_action_multi&lt;/field&gt;&#10;    &lt;field name=&quot;key&quot;&gt;action&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;value&quot; eval=&quot;'ir.actions.act_window,'+str(ref('action_wizard_$description$'))&quot;/&gt;&#10;&lt;/record&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="wizard" value="&lt;record id=&quot;action_wizard_$description$&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$wizard_model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;context&quot;&gt;{'model': '$model$'}&lt;/field&gt;&#10;    &lt;field name=&quot;target&quot;&gt;new&lt;/field&gt;&#10;&lt;/record&gt;&#10;&lt;record id=&quot;value_wizard_$description$&quot; model=&quot;ir.values&quot;&gt;&#10;    &lt;field name=&quot;object&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$label$&lt;/field&gt;&#10;    &lt;field name=&quot;key2&quot;&gt;client_action_multi&lt;/field&gt;&#10;    &lt;field name=&quot;key&quot;&gt;action&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;value&quot; eval=&quot;'ir.actions.act_window,'+str(ref('action_wizard_$description$'))&quot;/&gt;&#10;&lt;/record&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="wizard_model" expression="" defaultValue="" alwaysStopAt="true" />
@@ -155,12 +115,16 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
-  <template name="data" value="&lt;record model=&quot;$model$&quot; id=&quot;$id_value$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$name$&lt;/field&gt;&#10;&lt;/record&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="record" value="&lt;record model=&quot;$model$&quot; id=&quot;$id_value$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$name$&lt;/field&gt;&#10;&lt;/record&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="id_value" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML_TEXT" value="true" />
     </context>
+  </template>
+  <template name="field" value="&lt;field name=&quot;$name$&quot;&gt;$value$&lt;/field&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
   </template>
 </templateSet>
