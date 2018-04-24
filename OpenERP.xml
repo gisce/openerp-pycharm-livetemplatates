@@ -134,4 +134,12 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="click_erppeek" value="@click.command()&#10;@click.option('-h', '--host',&#10;              help='Host to connect to via ERP Peek',&#10;              type=str, default='http://localhost', show_default=True)&#10;@click.option('-p', '--port',&#10;              help='Port to connect via ERP Peek',&#10;              type=int, default=8069, show_default=True)&#10;@click.option('-d', '--database',&#10;              help='Database to connect to the ERP',&#10;              type=str, default='test_123456789', show_default=True)&#10;@click.option('-u', '--user',&#10;              help='User to connect to the ERP',&#10;              type=str, default='admin', show_default=True)&#10;@click.option('-p', '--password',&#10;              help='Password to connect to the ERP',&#10;              type=str)&#10;def $method_name$(host, port, database, user, password):&#10;    server_url = '{host}:{port}'.format(**locals())&#10;    c = Client(server=server_url, db=database, user=user, password=password)" description="Click with erppeek connection" toReformat="false" toShortenFQNames="true">
+    <variable name="method_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="csv_reading" value="HEADERS = [$headers$]&#10;&#10;Row = namedtuple('CSVRow', field_names=HEADERS)&#10;&#10;&#10;def count_lines(filepath):&#10;    with open(filepath, 'r') as file_to_read:&#10;        return len(file_to_read.readlines())&#10;&#10;&#10;def parse_line(connection, row):&#10;    pass&#10;&#10;&#10;def import_from_csv(connection, filepath, separator=';'):&#10;    total = count_lines(filepath)&#10;    with open(filepath, 'r') as csvfile:&#10;        csvreader = reader(csvfile, separator=separator)&#10;        for vals in tqdm(csvreader, desc='Reading CSV', total=total):&#10;            row = Row(vals)&#10;            parse_line(connection, row)" toReformat="false" toShortenFQNames="true">
+    <variable name="headers" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
 </templateSet>
