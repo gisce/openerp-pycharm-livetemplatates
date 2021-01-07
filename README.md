@@ -3,7 +3,7 @@
 ### Install
 
 ```sh
-cp OpenERP.xml ~/.PyCharmXX/config/templates/
+cp OpenERP.xml ~/.config/JetBrains/PyCharmXX/templates/
 ```
 
 ### Use
