@@ -21,7 +21,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="ir_action" value="&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;action_$action_id$_$type$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$action_name$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;view_$action_id$_$type$&quot;/&gt;&#10;&lt;/record&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="ir_action" value="&lt;record model=&quot;ir.actions.act_window&quot; id=&quot;action_$action_id$_$type$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$action_name$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;  &lt;field name=&quot;view_id&quot; ref=&quot;view_$action_id$_$type$&quot;/&gt;&#10;&lt;/record&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="action_id" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="action_name" expression="" defaultValue="" alwaysStopAt="true" />
