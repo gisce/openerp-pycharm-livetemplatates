@@ -127,7 +127,7 @@
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
   </template>
-  <template name="migration" value="# coding=utf-8&#10;import logging&#10;&#10;&#10;logger = logging.getLogger('openerp.migration.' + __name__)&#10;&#10;&#10;def up(cursor, installed_version):&#10;    if not installed_version:&#10;        return&#10;&#10;&#10;def down(cursor, installed_version):&#10;    pass&#10;&#10;&#10;migrate = up&#10;" description="Generate a migration script" toReformat="false" toShortenFQNames="true">
+  <template name="migration" value="# coding=utf-8&#10;import logging&#10;from tools import config&#10;&#10;&#10;logger = logging.getLogger('openerp.migration.' + __name__)&#10;&#10;&#10;def up(cursor, installed_version):&#10;    if not installed_version or config.updating_all:&#10;        return&#10;&#10;&#10;def down(cursor, installed_version):&#10;    pass&#10;&#10;&#10;migrate = up&#10;" description="Generate a migration script" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python_Top_Level" value="true" />
     </context>
