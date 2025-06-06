@@ -63,19 +63,19 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="ff" value="def _$function_name$(self, cursor, uid, ids, field_name, arg, context=None):&#10;    if not context:&#10;        context = {}&#10;    res = dict.fromkeys(ids, False)&#10;    &#10;    return res" description="OpenERP field function" toReformat="false" toShortenFQNames="true">
+  <template name="ff" value="def _$function_name$(self, cursor, uid, ids, field_name, arg, context=None):&#10;    if context is None:&#10;        context = {}&#10;    res = dict.fromkeys(ids, False)&#10;    &#10;    return res" description="OpenERP field function" toReformat="false" toShortenFQNames="true">
     <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="ff_search" value="def _$function_name$_search(self, cursor, uid, obj, name, args, context=None):&#10;    if not context:&#10;        context = {}&#10;    if not args:&#10;        return [('id', '=', 0)]" description="OpenERP field function search" toReformat="false" toShortenFQNames="true">
+  <template name="ff_search" value="def _$function_name$_search(self, cursor, uid, obj, name, args, context=None):&#10;    if context is Nonet:&#10;        context = {}&#10;    if not args:&#10;        return [('id', '=', 0)]" description="OpenERP field function search" toReformat="false" toShortenFQNames="true">
     <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="ff_inv" value="def _$function_name$_inv(self, cursor, uid, ids, name, value, args, context=None):&#10;    if not context:&#10;        context = {}&#10;    &#10;    return True" description="OpenERP field function inverse" toReformat="false" toShortenFQNames="true">
+  <template name="ff_inv" value="def _$function_name$_inv(self, cursor, uid, ids, name, value, args, context=None):&#10;    if context is None:&#10;        context = {}&#10;    &#10;    return True" description="OpenERP field function inverse" toReformat="false" toShortenFQNames="true">
     <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -127,7 +127,7 @@
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
   </template>
-  <template name="migration" value="# coding=utf-8&#10;import logging&#10;from tools import config&#10;&#10;&#10;logger = logging.getLogger('openerp.migration.' + __name__)&#10;&#10;&#10;def up(cursor, installed_version):&#10;    if not installed_version or config.updating_all:&#10;        return&#10;&#10;&#10;def down(cursor, installed_version):&#10;    pass&#10;&#10;&#10;migrate = up&#10;" description="Generate a migration script" toReformat="false" toShortenFQNames="true">
+  <template name="migration" value="# coding=utf-8&#10;import logging&#10;from tools import config&#10;&#10;&#10;logger = logging.getLogger('openerp.migration.' + __name__)&#10;&#10;&#10;def up(cursor, installed_version):&#10;    if not installed_version:&#10;        return&#10;    if config.updating_all:&#10;        return&#10;&#10;def down(cursor, installed_version):&#10;    pass&#10;&#10;&#10;migrate = up&#10;" description="Generate a migration script" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python_Top_Level" value="true" />
     </context>
